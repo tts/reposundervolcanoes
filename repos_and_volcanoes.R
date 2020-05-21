@@ -229,4 +229,4 @@ m <-
     title = "Repository metadata count",
     opacity = 1)
 
-mapview::mapshot(m, url = "repos_under_volcanos_map.html")
+mapview::mapshot(m, url = "repos_under_volcanoes_map.html")
