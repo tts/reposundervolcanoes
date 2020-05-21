@@ -40,7 +40,7 @@ repos_sf <- st_as_sf(repos, coords = c("lon","lat"), crs = 4326)
 
 #------------------------------------------------------------------------------------
 #
-# Distance btw volcanos and repos. The shorter object (volcanos_sf) is recycled.
+# Distance btw volcanoes and repos. The shorter object (volcanos_sf) is recycled.
 # The result is a matrix.
 #
 #------------------------------------------------------------------------------------
@@ -62,7 +62,7 @@ gc()
 
 #------------------------------------------------------------------------
 #
-# Filter those volcanos which have at least one repo within 50 km range
+# Filter those volcanoes which have at least one repo within 50 km range
 #
 #------------------------------------------------------------------------
 volcanos_with_repo_within_50_km_distance <- dist_df %>% 
@@ -162,7 +162,7 @@ tag.map.title <- tags$style(HTML("
 "))
 
 title <- tags$div(
-  tag.map.title, HTML("Repositories within a 50 km radius from volcanos")
+  tag.map.title, HTML("Repositories under the volcano")
 )  
 
 
